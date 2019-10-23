@@ -1,0 +1,50 @@
+body {
+  padding-top: 2rem;
+}
+.starter-template {
+  padding: 1rem 1.5rem;
+  height: auto;
+  text-align: center;
+}
+
+#milka  {
+  font-size: 100px;
+  font-family: 'Cabin Sketch', cursive;
+  padding-top: 5px;
+  color: green;
+}
+#milka1 {
+  font-family: 'Cabin Sketch', cursive;
+  align-content:stretch;
+  color: white;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-left: 250px;
+}
+#navbarsExampleDefault {
+  background-color:	#800000;
+  padding-left: 80px;
+}
+
+.navbar-brand {
+align-content:stretch;
+}
+.form-inline {
+  align-content:stretch;
+  padding-left: 250px;
+}
+.lead {
+  color: green;
+}
+.carousel-inner {
+  height: 700px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: 5,5,5,5.5;
+  color: white;
+  text-align: right;
+  class: collapse;
+}
