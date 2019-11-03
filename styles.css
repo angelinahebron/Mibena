@@ -1,36 +1,14 @@
 body {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 .starter-template {
-  padding: 1rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   height: auto;
   text-align: center;
 }
 
-#milka  {
-  font-size: 100px;
-  font-family: 'Cabin Sketch', cursive;
-  padding-top: 5px;
-  color: green;
-}
-#milka1 {
-  font-family: 'Cabin Sketch', cursive;
-  align-content:stretch;
-  color: white;
-  font-size: 20px;
-  padding-top: 5px;
-  padding-left: 250px;
-}
-#navbarsExampleDefault {
-  background-color:	#800000;
-  padding-left: 80px;
-}
-
-.navbar-brand {
-align-content:stretch;
-}
 .form-inline {
-  align-content:stretch;
+  align-content: stretch;
   padding-left: 250px;
 }
 .lead {
@@ -44,7 +22,73 @@ align-content:stretch;
   position: fixed;
   bottom: 0;
   background-color: 5,5,5,5.5;
-  color: white;
+  color: green;
   text-align: right;
   class: collapse;
+}
+
+/*NAVIGATION & HEADER*/
+
+#searchbar {
+position: absolute;
+top:0;
+right:0;
+}
+
+
+#top-heading {
+  color: #24292E;
+  font-family: arial;
+  font-size: 20px;
+}
+
+.mu-main-navbar {
+  background-color: white;
+  border: none;
+  padding: 20px 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.mu-main-navbar .mu-main-nav {
+  font-family: "arial";
+}
+
+.mu-main-navbar .mu-main-nav li a {
+  color: #24292E;
+}
+
+.mu-main-navbar .mu-main-nav .dropdown-menu {
+  background-color: #24292E;
+  border-radius: 0;
+}
+
+.mu-main-navbar .mu-main-nav .dropdown-menu li a {
+  padding: 10px 20px;
+}
+
+.mu-main-navbar .navbar-header .navbar-brand {
+  color: #24292E;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 35px;
+  padding: 0;
+  margin-top: 16px;
+  height: 34px;
+  width: 180px;
+}
+
+.mu-main-navbar .navbar-header .navbar-brand img {
+  margin-top: -10px;
+}
+
+
+.mu-main-navbar .navbar-header .navbar-brand-small {
+  height: 20px;
+  margin-top: 16px;
+  width: 105px;
+}
+
+.mu-main-navbar .navbar-header .navbar-brand-small span {
+  margin-top: -4px;
 }

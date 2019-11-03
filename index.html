@@ -9,54 +9,56 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><!-- ADD BOOTSTRAP CORE HERE!!!!-->
 
+<!-- HEADER START -->
+  <header id="header">
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+<!-- NAVIGATION BUTTON DROP DOWN MENU + SEARCHBAR START-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" <button name="button">Navigation</button>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-    <div class="starter-template">
-    <div id="main-heading">
-      <h1>Mibena Italian Restaurant</h1>
-      <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap" rel="stylesheet">
-      <link href="css/styles.css" rel="stylesheet">
-    </div>
+<div id="searchbar">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" button="searchbar"  type="submit">Search</button>
+                    </form>
+</div>
+
+<!--  NAVIGATION BUTTON DROP DOWN MENU + SEARCHBAR END-->
+
+<!--  HEADER TEXT START  -->
+          <div id= "top-heading"><a class="navbar-brand" href="index.html">Mibena Italian Restaurant</a>
+        </div>
+<!--  HEADER TEXT END  -->
+
+<!-- SUBTITLE START -->
 
     <div id="subtitle">
       <p class="lead">The best Italian food in Ireland. Home-made food with the taste of Italy.</p>
     </div>
-
   </head>
   <body>
+<!-- SUBTITLE END -->
 
-
-<div id="links">
-    <nav class="navbar-expand-md navbar-dark bg-dark fixed-top">
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <a class="navbar-brand" href="#">Home</a>
-
-<!--it needs to have some space between home and the edge of the page, couldn't find it (milka)-->
-
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">About us<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Locations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Booking</a>
-          </li>
-        </div>
-          <li> <div id="top-heading"> Mibena - an Italian Restaurant
-          </div>
-          </li>
-          <li> <form class="form-inline">
-              <div id="nav-bar">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </div>
-          </form>
-        </li>
-        </ul>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#mu-about-us">OUR STORY</a></li>
+            <li><a href="#mu-restaurant-menu">MENU</a></li>
+            <li><a href="#mu-reservation">LOCATIONS & RESERVATION</a></li>
+            <li><a href="#mu-contact">CONTACT</a></li>
+          </ul>
+        </div><!--/.nav bar collapse -->
       </div>
     </nav>
-<!--images of the restaurant and food-->
+  </header>
+<!-- End header section -->
+
+<!--Images of the restaurant and food-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
