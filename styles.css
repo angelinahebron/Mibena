@@ -14,17 +14,10 @@ body {
 .lead {
   color: green;
 }
-.carousel-inner {
-  height: 700px;
-}
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  background-color: 5,5,5,5.5;
-  color: green;
-  text-align: right;
-  class: collapse;
+/*CAROUSEL*/
+.carousel-inner {
+  height: 600px;
 }
 
 /*NAVIGATION & HEADER*/
@@ -91,4 +84,15 @@ right:0;
 
 .mu-main-navbar .navbar-header .navbar-brand-small span {
   margin-top: -4px;
+}
+
+/*FOOTER*/
+.footer {
+ list-style-type: none;
+ width: 100%;
+ background-color: white;
+ color: black;
+ text-align: center;
+ margin: 0;
+ padding: 0;
 }
