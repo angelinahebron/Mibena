@@ -102,4 +102,6 @@ top: 40px;
  padding: 0;
  display: flex;
  justify-content: space-around;
+ border-style: solid;
+ border-color: #5CAE5C;
 }
