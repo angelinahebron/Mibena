@@ -15,6 +15,17 @@ body {
   color: green;
 }
 
+.carousel-inner {
+  width:640px;
+  height:360px;
+  margin: auto;
+}
+
+.carousel-item {
+  width:640px;
+  height:360px;
+}
+
 /*NAVIGATION & HEADER*/
 
 #headerseperator {
