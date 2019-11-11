@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="ourstory.css">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: green;
+  font-size: 23px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: green;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+
+<!-- HEADER START -->
+  <header id="header">
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+<!-- NAVIGATION BUTTON DROP DOWN MENU + SEARCHBAR START-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" <button name="button">Navigation</button>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+<!--- SEARCHBAR --->
+<div id="searchbar">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> </div>
+<div id="searchbarbutton">
+          <button class="btn btn-outline-success my-2 my-sm-0" button="searchbar"  type="submit">Search</button>
+                    </form>
+</div>
+
+<!--  NAVIGATION BUTTON DROP DOWN MENU + SEARCHBAR END-->
+
+<body>
+
+<h2>Our Story</h2>
+<p>Mibena is proud to provide high-quality, authentic Italian food to the Irish community</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="https://www.gannett-cdn.com/presto/2019/03/14/PDEM/0cf78db7-5c5e-405a-acc7-b9312e8565de-DESBrd_04-22-2014_Waukee_1_Y001__2014_04_20_IMG_RmMOZQPvCOCrOwK-556x_1_1_DO73FFQ3_L402274150_IMG_RmMOZQPvCOCrOwK-556x_1_1_DO73FFQ3.jpg?width=520&height=390&fit=bounds&auto=webp" style="width:100%">
+  <div class="text">Mibena Italian Restaurant was founded by Grandma Mibena in 1940, when she migrated to Ireland</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCzrKyvJQqNTv5ZViNfBNWvf4MohYU2PDlUycj_tICyEGrAye&s" style="width:100%">
+  <div class="text">Mibena experienced continued success and expanded with a second location in Cork to match our expanding family</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="http://taguephoto.com/wp-content/uploads/2017/04/160706_SR_Kitchen-4884.jpg" style="width:100%">
+  <div class="text">Enjoying a long and successful career, the founders retired and their eldest son Mario took over the family business</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="http://www.geranium.dk/media/1076/geranium-dec18-12bw.jpg?width=659.2" style="width:100%">
+  <div class="text">The family listened to their loyal customers and opened a third location in Galway</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="https://www.merketingvisie.nl/wp-content/uploads/2017/04/Restaurant-Photography-Kitchen-Plating1.jpg" style="width:100%">
+  <div class="text">Continuing the family tradition, Mario's son took over the restaurant</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+<!--FOOTER START-->
+<!---this footer is bad - needs to be colapsed somehow - the codes im imputting are not working(milka)-->
+    <div>
+      <ul class="footer">
+        <li class="horizontal"><a href="https://www.google.com/maps/place/Dublin/@53.3242381,-6.3857869,11z/data=!3m1!4b1!4m5!3m4!1s0x48670e80ea27ac2f:0xa00c7a9973171a0!8m2!3d53.3498053!4d-6.2603097">Dublin</a></li>
+        <li class="horizontal"><a href="https://www.google.com/maps/place/Cork/@51.8959843,-8.5330896,12z/data=!3m1!4b1!4m5!3m4!1s0x4844900891beb961:0xa00c7a99731c5d0!8m2!3d51.8985143!4d-8.4756035">Cork</a></li>
+        <li class="horizontal"><a href="https://www.google.com/maps/place/Galway/@53.283891,-9.1187861,12z/data=!3m1!4b1!4m5!3m4!1s0x485b93955a2d5bff:0x32b1b440a495281!8m2!3d53.270668!4d-9.0567905">Galway</a></li>
+      </ul>
+    </div>
+<!--FOOTER END-->
+
+</html>
