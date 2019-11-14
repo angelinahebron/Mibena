@@ -11,6 +11,33 @@
 
     <body background = https://www.chehalemwines.com/wp-content/uploads/2016/12/Stoller-Vineyard.jpg?id=1802>
 
+<!-- for columns -->
+
+      <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+        width: 30%;
+      }
+      .columnspace {
+        float: left;
+        width: 2.2%;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      </style>
+
+
     <!-- HEADER START -->
       <header id="header">
         <nav class="navbar navbar-default mu-main-navbar" role="navigation">
@@ -66,13 +93,32 @@
     <!-- End header section -->
 
 <div id="contact">
-<p>To make a reservation, please contact the following numbers...</P>
-  <ul>
-  <li>Dublin: 01 434 46234</li>
-  <li>Cork: 01 357 34236</li>
-  <li>Galway: 01 095 24724</p></li>
-  </ul>
-<p>Our opening hours are 12:00-20:00 every day.</p>
+<br>
+<h2><center>To make a reservation, please contact the following numbers...</h2>
+<br>
+<div class="row">
+  <div class="columnspace" style="background-color:white;"></div>
+  <div class="column" style="background-color:white;">
+    <img src="https://www.goodfood.com.au/content/dam/images/g/q/y/k/l/a/image.gallery.galleryLandscape.620x414.gqyl1u.png/1471934245045.jpg" style="width:100%">
+    <h2>Dublin</h2>
+    <p>01 434 46234</p>
+  </div>
+  <div class="columnspace" style="background-color:white;"></div>
+  <div class="column" style="background-color:white;">
+    <img src="https://www.goodfood.com.au/content/dam/images/g/q/y/k/m/5/image.gallery.galleryLandscape.620x414.gqyl1u.png/1474245650437.jpg" style="width:100%">
+    <h2>Cork</h2>
+    <p>01 357 34236</p>
+  </div>
+  <div class="columnspace" style="background-color:white;"></div>
+  <div class="column" style="background-color:white;">
+    <img src="https://www.goodfood.com.au/content/dam/images/g/q/y/k/p/0/image.gallery.galleryLandscape.620x414.gqyl1u.png/1471934245045.jpg" style="width:100%">
+    <h2>Galway</h2>
+    <p>01 095 24724</p>
+  </div>
+  <div class="columnspace" style="background-color:white;"></div>
+</div>
+<br>
+<h3><font color=white><center>Our opening hours are 12:00-20:00 every day.</h3>
 
 
         <!-- Bootstrap core JavaScript
