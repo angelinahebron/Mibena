@@ -91,28 +91,7 @@ top: 40px;
   margin-top: -4px;
 }
 
-/*FOOTER*/
-.footer {
- list-style-type: none;
- width: 100%;
- background-color: white;
- color: black;
- text-align: center;
- margin: 0;
- padding: 0;
- display: flex;
- justify-content: space-around;
- border-style: solid;
- border-color: #5CAE5C;
-}
-
-
-
-
-
 /*MENU CSS*/
-
-
 
 .carousel-in {
   width:640px;
@@ -124,15 +103,6 @@ top: 40px;
 .carousel-item {
   width:640px;
   height:360px;
-}
-
-/*NAVIGATION & HEADER*/
-
-#headerseperator {
-  border-width:1px;
-  border-style: solid;
-  border-color: #5CAE5C;
-  top: 20;
 }
 
 .menu {
@@ -167,20 +137,17 @@ top: 40px;
   position: absolute;
   bottom: 0px;
   right: 0;
-  background-color: white;
+  background-color: transparent;
   font-weight: bold;
 }
 .description {
   margin-top: 5px;
   font-style: italic;
-  background-color: white;
+  background-color: transparent;
   display: inline-block;
   max-width: 50%;
 }
-hr {
-  border: none;
-    border-top: 1px dotted black;
-    margin-top: -20px;
+
 }
 footer:not(.app-footer) {
   text-align: center;
@@ -204,7 +171,43 @@ footer:not(.app-footer) {
     position: static;
     margin-top: 15px;
   }
-hr {
-    display: none;
-    height: 5px;
-  }
+
+#menuseperator {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+#menuseperator {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-bottom: 10px;
+}
+
+/*NAVIGATION & HEADER*/
+
+#headerseperator {
+    height:3px;
+    border:none;
+    color: #404448;
+    background-color:#404448;
+   }
+
+   /*FOOTER*/
+.footer {
+    list-style-type: none;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: white;
+
+   }
